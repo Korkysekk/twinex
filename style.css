@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: black no-repeat;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(10,13,13);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5;
+    transition: 0.5s;
+}
+
+header .logo:hover {
+    color: #dbdbdb;
+    letter-spacing: 3;
+    transition: 0.5s;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 6px 15px;
+    border-radius: 200px;
+    letter-spacing: 2;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    background: #fff;
+    color: black;
+    letter-spacing: 0;
+    transition: 0.5s;
+}
+
+li i {
+    position: relative;
+    top: 2px;
+    font-size: 20;
+}
+
+.active {
+    background: #fff;
+    color: black;
+}
+
+.active:hover {
+    background: transparent;
+    color: white;
+    transition: 0.5s;
+}
+
+#section1
+{
+position: relative;
+width: 100%;
+height: 100vh;
+padding: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#section1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top,black,rgb(10,13,13));
+    z-index: 1000;
+}
+
+#section1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#section1 img#sun {
+    mix-blend-mode: screen;
+}
+
+#section1 img#mountains-front {
+    z-index: 8;
+}
+
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.6vw;
+    z-index: 1;
+    letter-spacing: 6;
+}
+
+#btn1 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: black;
+    font-size: 1.5em;
+    letter-spacing: 3;
+    z-index: 1000;
+    margin-top: 570px;
+    transition: 0.5s;
+}
+
+#btn1:hover {
+    letter-spacing: 1;
+    color: #dbdbdb;
+    background: transparent;
+    transition: 0.5s;
+}
+
+#btn1 i {
+    position: relative;
+    top: 2px;
+    font-size: 22;
+}
+
+.sec {
+    position: relative;
+    color: white;
+    padding: 100px;
+    background: black;
+    z-index: 6;
+}
+
+.sec2 {
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: -100px;
+    margin-right: -100px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}

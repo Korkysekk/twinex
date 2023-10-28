@@ -1,0 +1,59 @@
+<DOCTYPE html>
+    <html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Twinex</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Twinex</a>
+        <ul>
+            <li><a href="#" class="active"><i class='bx bx-home-alt-2'></i> Home</a></li>
+            <li><a href="#"><i class='bx bx-info-circle' ></i> About us</a></li>
+            <li><a href="#"><i class='bx bx-download' ></i> Download</a></li>
+            <li><a href="#"><i class='bx bx-edit' ></i> Changes</a></li>
+        </ul>
+    </header>
+
+    <section id="section1">
+        <img src="images/background.png" id="background">
+        <img src="images/sun.png" id="sun">
+        <img src="images/clouds.png" id="clouds">
+        <h2 id="text">TWINEX</h2>
+        <a href="#about-us" id="btn1"><i class='bx bx-downvote bx-flashing' ></i>Page down</a>
+        <img src="images/mountains-front.png" id="mountains-front">
+    </section>
+
+    <section id="section2">
+    <div class="sec" id="about-us">
+        <div class="sec2" id="sec2">
+        <img src="images/banner1.png" id="banner1">
+        <img src="images/banner1.png" id="banner2">
+        <img src="images/banner1.png" id="banner3">
+    </div>
+</div>
+</section>
+    <script>
+        let sun = document.getElementById('sun');
+        let clouds = document.getElementById('clouds');
+        let text = document.getElementById('text');
+        let btn1 = document.getElementById('btn1');
+        let mountains = document.getElementById('mountains-front');
+
+window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    clouds.style.left = value * 0.25 + 'px';
+    sun.style.top = value * 0.30 + 'px';
+    mountains.style.top = value * 0 + 'px';
+    text.style.marginTop = value * 0.75 + 'px';
+})
+    </script>
+</body>
+</html>
