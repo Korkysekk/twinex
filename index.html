@@ -10,8 +10,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="script.js"></script>
     <meta property="og:title" content="Twinex">
-    <meta property="og:description" content="nevim jeste more">
-    <meta property="og:url" content="https://korkysekk.github.io/twinex/">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://twinex.pages.dev">
+        <meta property="og:image" content="logus.png">
+        <meta property="og:description" content="nevim jeste more">
+        <meta name="theme-color" content="#ffd100">
+
 </head>
 
 <body>
@@ -44,12 +48,19 @@
 </div>
 </section>
     <script>
+document.addEventListener('DOMContentLoaded', function() {
+var favicon = document.createElement('link');
+favicon.rel = 'icon';
+favicon.href = 'images/icon.ico';
+
+document.head.appendChild(favicon);
+
+});
         let sun = document.getElementById('sun');
         let clouds = document.getElementById('clouds');
         let text = document.getElementById('text');
         let btn1 = document.getElementById('btn1');
         let mountains = document.getElementById('mountains-front');
-
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     clouds.style.left = value * 0.25 + 'px';
